@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 import icones from '../../assets/icones/user.svg'
 import icones2 from '../../assets/icones/star.svg'
 
-import '"./Card.css'
+import './Card.css'
 
 
 type CardProps = {
+    id: number;
     chocolat: string;
     nome: string;
     descrição: string;
@@ -16,7 +17,7 @@ type CardProps = {
 }
 
 
-function Card({chocolat, nome, descrição, valor, quantidadeAvaliações, nota} : CardProps) {
+function Card({id, chocolat, nome, descrição, valor, quantidadeAvaliações, nota} : CardProps) {
     return(
         <article className="prod_card">
         <figure>
@@ -26,7 +27,7 @@ function Card({chocolat, nome, descrição, valor, quantidadeAvaliações, nota}
           />
         </figure>
         <h2>
-          <Link to="/produto">{nome}</Link>
+          <Link to={`/produto/${id}`}>{nome}</Link>
         </h2>
         <p className="card_desc">
          {descrição}

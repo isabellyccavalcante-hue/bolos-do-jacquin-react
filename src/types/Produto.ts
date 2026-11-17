@@ -7,6 +7,4 @@ export type Produto = {
     ativo: boolean;
     imagem: string;
     categoriaIds: number[]
-
-
 }

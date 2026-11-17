@@ -13,7 +13,7 @@ export default function App(){
         <>
             <Header />
             <Routes>
-                <Route path="/produto" element={<DetProduto/>} />
+                <Route path="/produto/:id" element={<DetProduto/>} />
                 <Route path="/" element={<Home/>} />
                 <Route path="/produtos" element={<ListaProdutos/>} />
                 <Route path="/login" element={<Login/>} />
