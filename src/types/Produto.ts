@@ -1,9 +1,9 @@
 export type Produto = {
     id: number;
     nome: string;
-    descriçãoCurta: string;
-    descriçãoLonga: string;
-    preçoPorKg: number;
+    descricaoCurta: string;
+    descricaoLonga: string;
+    precoPorKg: number;
     ativo: boolean;
     imagem: string;
     categoriaIds: number[]
