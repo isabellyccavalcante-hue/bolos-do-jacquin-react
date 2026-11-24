@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
-
 import icones from '../../assets/icones/user.svg'
 import icones2 from '../../assets/icones/star.svg'
-
 import './Card.css'
 
 
@@ -34,12 +32,12 @@ function Card({id, chocolat, nome, descrição, valor, quantidadeAvaliações, n
         </p>
         <p className="card_rodape">
           <data value={valor}>R$ {valor} / kg</data>
-          <span className="card_av">
+          {/* <span className="card_av">
             <img src={icones} alt="icone de usuarios" />
             <data value={quantidadeAvaliações}>{quantidadeAvaliações}</data>
             <img src={icones2} alt="icone de estrela" />
             <data value={nota}>{nota}</data>
-          </span>
+          </span> */}
         </p>
       </article>
     )
